@@ -55,6 +55,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* --RESET ENDS HERE-- */
 
+.profile-button > .header-profile,
+.trending-profile {
+    width: 55px;
+}
+
+.lower-header__left > .header-profile {
+    width: 85px;
+}
+
 .container {
     display: grid;
     grid-template: 1fr 4fr / 1fr 3.5fr;
