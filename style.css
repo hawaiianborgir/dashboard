@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 .header {
     grid-area: header;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr;
 }
 .upper-header {
     display: grid;
@@ -144,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-content {
     grid-area: main-content;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 0.7fr;
 }
 
 .main-content__left {
