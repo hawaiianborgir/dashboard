@@ -119,9 +119,16 @@ input[type="search"] {
 .upper-header__right {
 	grid-area: upright;
     display: flex;
-	justify-content: right;
+	justify-content: flex-end;
 	align-items: center;
 	gap: 30px;
+}
+.lower-header__right > button {
+	border-radius: 15px;
+	border: none;
+	background-color: pink;
+	width: 110px;
+	height: 35px;
 }
 
 .lower-header__left {
@@ -145,6 +152,9 @@ input[type="search"] {
 .lower-header__right {
 	grid-area: lowright;
 	display: flex;
+	align-self: center;
+	gap: 30px;
+	/* justify-content: space-evenly; */
 }
 
 .search-button,
