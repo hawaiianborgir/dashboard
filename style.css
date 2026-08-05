@@ -170,6 +170,24 @@ input[type="search"] {
     grid-area: sidebar;
     display: grid;
     grid-template-rows: 1fr 4fr 6fr;
+	gap: 70px;
+}
+/* .nav-container,
+.menu-container {
+	display: grid;
+	grid-template-columns: 1fr;
+}  */
+.logo-container,
+.nav-container > a,
+.menu-container > a {
+	/* border: 1px solid red; */
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.nav-container > a,
+.menu-container > a {
+	padding: 13px 0;
 }
 
 .main-content {
