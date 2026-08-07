@@ -161,19 +161,27 @@ input[type="search"] {
 .lower-header__left {
 	grid-area: lowleft;
 	display: grid;
-	grid-template: 1fr 1fr / 0.5fr 2fr;
+	grid-template: 0.8fr 1.2fr / 0.3fr 2fr;
 	grid-template-areas: 
 		"profile hello"
 		"profile profileId";
 }
 .lower-header__left > .header-profile {
   	grid-area: profile;
+	align-self: center;
+	/* justify-self: center; */
 }
 .lower-header__left > .hello{
   	grid-area: hello;
+	align-self: end;
+	font-size: 0.9rem;
+	font-weight: 700;
 }
 .lower-header__left > .profile-font {
   	grid-area: profileId;
+	align-self: start;
+	font-size: 1.5rem;
+	font-weight: 900;
 }
 
 .lower-header__right {
