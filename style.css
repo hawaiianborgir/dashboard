@@ -61,6 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 	--soft-color: #D0C8CF;
 	--font-color: #FEFEFE;
 	--bg-color: #F66864;
+	--line-color: #c73732;
 	--test: #6E8DC4;
 
 }
@@ -142,6 +143,7 @@ input[type="search"] {
 }
 input[type="search"]:focus{
 	outline: none;
+	/* make a js for outline highlight for .search-bar when this input:focus */
 }
 
 .upper-header__left,
@@ -220,8 +222,9 @@ input[type="search"]:focus{
 .sidebar {
     grid-area: sidebar;
     display: grid;
-    grid-template-rows: 1fr 4fr 6fr;
+    grid-template-rows: 1fr 7fr 3fr;
 	gap: 70px;
+	
 }
 .sidebar a {
 	text-decoration: none;
@@ -243,8 +246,16 @@ input[type="search"]:focus{
 .nav-container,
 .menu-container{
 	padding-left: 25px;
+	position: relative;
+	/* border: 2px solid green; */
 }
-
+.nav-container > .navbar,
+.menu-container > .navbar {
+	position: absolute;
+	border-top: 2px solid var(--line-color);
+	width: 200px;
+	top: -15px;
+}
 .nav-container > a,
 .menu-container > a {
 	display: flex;
