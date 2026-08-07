@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Variable Declaration */
 :root {
 	--accent-color: #FCC8DF;
-	--soft-color: #FFF1E6;
+	--soft-color: #D0C8CF;
 	--font-color: #FEFEFE;
 	--bg-color: #F66864;
 	--test: #6E8DC4;
@@ -126,9 +126,22 @@ body {
 	align-items: center;
     gap: 15px;
 }
+.search-bar {
+	background-color: var(--soft-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 800px;
+	height: 40px;
+	border-radius: 20px;
+}
 input[type="search"] {
-	width: 500px;
-	border-radius: 15px;
+	width: 750px;
+	border: none;	
+	background-color: transparent;
+}
+input[type="search"]:focus{
+	outline: none;
 }
 
 .upper-header__left,
@@ -200,7 +213,7 @@ input[type="search"] {
 .favorite-button,
 .follow-button,
 .fork-button {
-	/* border: none; */
+	border: none;
 	background-color: transparent;
 }
 
