@@ -83,7 +83,7 @@ body {
 }
 
 
-
+/* HEADER */
 .container {
     height: 100dvh; /* fits container into the viewpower */
     overflow: hidden; /* clip the children into the track size */
@@ -220,9 +220,6 @@ input[type="search"]:focus{
 	font-weight: 700;
 }
 
-
-
-
 .search-button,
 .notification-button,
 .favorite-button,
@@ -232,6 +229,7 @@ input[type="search"]:focus{
 	background-color: transparent;
 }
 
+/* SIDEBAR */
 .sidebar {
     grid-area: sidebar;
     display: grid;
@@ -247,6 +245,7 @@ input[type="search"]:focus{
 	align-items: center;
 	gap: 10px;
 	padding-top: 12px;
+	flex-wrap: wrap;
 }
 .logo-icon {
 	width: 60px;
@@ -266,7 +265,7 @@ input[type="search"]:focus{
 .menu-container > .navbar {
 	position: absolute;
 	border-top: 2px solid var(--line-color);
-	width: 200px;
+	width: clamp(100px, 11.448px + 11.2233vw , 200px);
 	top: -15px;
 }
 .nav-container > a,
@@ -281,10 +280,11 @@ input[type="search"]:focus{
 }
 .nav-font,
 .menu-font {
-	font-size: 1.3rem;
+	font-size: clamp(0.6rem, -0.0199rem + 1.257vw, 1.3rem);
 	font-weight: 800;
 }
 
+/* MAIN CONTENT */
 .main-content {
     grid-area: main-content;
     display: grid;
