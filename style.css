@@ -133,10 +133,15 @@ body {
 	height: 40px;
 	border-radius: 20px;
 }
+.search-bar:focus{
+	outline: red;
+}
 input[type="search"] {
 	width: 750px;
 	border: none;	
 	background-color: transparent;
+	caret-color: var(--bg-color);
+	caret-shape: block;
 }
 input[type="search"]:focus{
 	outline: none;
@@ -144,6 +149,12 @@ input[type="search"]:focus{
 }
 .search-button {
 	flex-shrink: 0;
+}
+.search-button:hover {
+	transform: translateY(-2px);
+}
+.search-button:active {
+	transform: scale(0.98);
 }
 
 .upper-header__left,
