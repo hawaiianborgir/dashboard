@@ -295,6 +295,14 @@ input[type="search"]:focus{
 	border: 1px solid red;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	gap: 20px;
+}
+.project-card{
+	border: 1px solid green;
+	border-radius: 10px;
+	display: grid;
+	background-color: white;
+	height: 250px;
 }
 .announcement-container,
 .trending-container {
