@@ -121,7 +121,9 @@ body {
 		"upleft upright"
 		"lowleft lowright";
 
-	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+	position: relative;
+	z-index: 1;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .upper-header__left {
   	grid-area: upleft;
