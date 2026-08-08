@@ -192,8 +192,7 @@ input[type="search"]:focus{
 	gap: 30px;
 	padding-right: clamp(10px, -70px + 10.4167vw, 105px);
 }
-.profile-button > .header-profile,
-.trending-profile {
+.profile-button > .header-profile {
     width: 55px;
 }
 .upper-header__right > .profile-font {
@@ -374,12 +373,17 @@ input[type="search"]:focus{
 	height: 370px;
 }
 .trending-card {
-	padding: 15px;
+	padding: 15px 0 15px 25px;
 	display: grid;
-	grid-template: 1fr 1fr / 1.3fr 2.7fr;
+	grid-template: 1fr 1fr / 1fr 3fr;
 	grid-template-areas: 
 		"profpic id"
 		"profpic text";
+	gap: 0 10px;
+}
+.trending-profile {
+	min-width: 50px;
+	width: 55px;
 }
 .profile-button {
 	grid-area: profpic;
