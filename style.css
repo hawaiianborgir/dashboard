@@ -279,8 +279,14 @@ input[type="search"]:focus{
     grid-area: main-content;
     display: grid;
     grid-template-columns: 2fr 0.7fr;
-}
 
+	background-color: var(--soft-color);
+	padding: 25px 20px 35px 15px;
+}
+.section-title {
+	font-size: 1.35rem;
+	font-weight: 600;
+}
 .main-content__left {
   	overflow-y: auto; /* makes the content scrollable if needed*/
 }
