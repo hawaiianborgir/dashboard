@@ -166,7 +166,6 @@ input[type="search"]:focus{
 .lower-header__left > .header-profile {
   	grid-area: profile;
 	align-self: center;
-	/* justify-self: center; */
 }
 .lower-header__left > .hello{
   	grid-area: hello;
@@ -213,8 +212,6 @@ input[type="search"]:focus{
 .lower-header__right > button {
 	border-radius: 20px;
 	border: none;
-	/* width: 100px; 
-	height: 40px; */
 	width: 100px; 
 	height: clamp(20px, 12.368px + 1.6447vw, 40px);
 	font-weight: 700;
@@ -259,7 +256,6 @@ input[type="search"]:focus{
 .menu-container{
 	padding-left: 25px;
 	position: relative;
-	/* border: 2px solid green; */
 }
 .nav-container > .navbar,
 .menu-container > .navbar {
@@ -369,7 +365,6 @@ input[type="search"]:focus{
 }
 .trending-container {
 	display: grid;
-	/* justify-content: center; */
 	height: 370px;
 }
 .trending-card {
@@ -398,9 +393,4 @@ input[type="search"]:focus{
 .trending-text {
 	grid-area: text;
 	color: var(--text-color);
-}
-
-/* Small Screen Fluidity */
-@media screen and (max-width: 768px) {
-
 }
