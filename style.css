@@ -279,6 +279,7 @@ input[type="search"]:focus{
     grid-area: main-content;
     display: grid;
     grid-template-columns: 2fr 0.7fr;
+	gap: 15px;
 
 	background-color: var(--soft-color);
 	padding: 25px 20px 35px 15px;
@@ -287,6 +288,15 @@ input[type="search"]:focus{
 	font-size: 1.35rem;
 	font-weight: 600;
 }
-.main-content__left {
-  	overflow-y: auto; /* makes the content scrollable if needed*/
+.main-content{
+  	overflow-y: auto; /* min-height:0 plus this = scrollable*/
+}
+.project-container {
+	border: 1px solid red;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.announcement-container,
+.trending-container {
+	background-color: white;
 }
