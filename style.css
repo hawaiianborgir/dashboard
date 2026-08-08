@@ -360,3 +360,30 @@ input[type="search"]:focus{
 .announcement-container > .navbar{
 	border-bottom: 0.5px solid var(--text-color);
 }
+.trending-container {
+	display: grid;
+	/* justify-content: center; */
+	height: 370px;
+}
+.trending-card {
+	padding: 15px;
+	display: grid;
+	grid-template: 1fr 1fr / 1.3fr 2.7fr;
+	grid-template-areas: 
+		"profpic id"
+		"profpic text";
+}
+.profile-button {
+	grid-area: profpic;
+	align-self: center;
+	justify-self: center;
+}
+.trending-profileid {
+	grid-area: id;
+	align-self: end;
+	font-weight: 500;
+}
+.trending-text {
+	grid-area: text;
+	color: var(--text-color);
+}
