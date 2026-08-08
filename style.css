@@ -62,7 +62,8 @@ h1, h2, h3, h4, h5, h6 {
 	--font-color: #FEFEFE;
 	--bg-color: #F66864;
 	--line-color: #c73732;
-	--test: #6E8DC4;
+	--project-color: #6E8DC4;
+	--desc-font:#5F6368;
 
 }
 
@@ -281,10 +282,10 @@ input[type="search"]:focus{
     grid-area: main-content;
     display: grid;
     grid-template-columns: 2fr 0.7fr;
-	gap: 15px;
+	gap: 25px;
 
 	background-color: var(--soft-color);
-	padding: 25px 20px 35px 15px;
+	padding: 30px 25px 40px 20px;
 }
 .section-title {
 	font-size: 1.35rem;
@@ -294,17 +295,30 @@ input[type="search"]:focus{
   	overflow-y: auto; /* min-height:0 plus this = scrollable*/
 }
 .project-container {
-	border: 1px solid red;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-	gap: 20px;
+	gap: 30px;
 }
 .project-card{
-	border: 1px solid green;
+	border-left: 10px solid var(--project-color);
 	border-radius: 10px;
-	display: grid;
 	background-color: white;
 	height: 250px;
+	display: grid;
+	grid-template-rows: 1.5fr 4fr 1.5fr;
+	padding: 0 20px 0 15px;
+	box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.project-title{
+	font-size: 1.2rem;
+	font-weight: 600;
+	align-self: end;
+}
+.project-description {
+	color: var(--desc-font);
+}
+.button-container {
+	justify-self: end;
 }
 .announcement-container,
 .trending-container {
