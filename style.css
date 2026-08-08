@@ -121,9 +121,11 @@ body {
 	grid-template-areas: 
 		"upleft upright"
 		"lowleft lowright";
-
+	
+	/* bring the header to the surface for the shadow */
 	position: relative;
-	z-index: 1;
+	z-index: 1; 
+	
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .upper-header__left {
@@ -137,7 +139,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 800px;
+	width: clamp(300px, -121.0528px + 54.8246vw, 800px);
 	height: 40px;
 	border-radius: 20px;
 }
@@ -149,6 +151,9 @@ input[type="search"] {
 input[type="search"]:focus{
 	outline: none;
 	/* make a js for outline highlight for .search-bar when this input:focus */
+}
+.search-button {
+	flex-shrink: 0;
 }
 
 .upper-header__left,
@@ -386,4 +391,9 @@ input[type="search"]:focus{
 .trending-text {
 	grid-area: text;
 	color: var(--text-color);
+}
+
+/* Small Screen Fluidity */
+@media screen and (max-width: 768px) {
+
 }
