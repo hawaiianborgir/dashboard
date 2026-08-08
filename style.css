@@ -216,6 +216,18 @@ input[type="search"]:focus{
 	height: clamp(20px, 12.368px + 1.6447vw, 40px);
 	font-weight: 700;
 	cursor: pointer;
+	box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.15);
+}
+.lower-header__right > button:hover {
+  background-color: var(--project-color);
+  transform: translateY(-2px);
+}
+.lower-header__right > button:active {
+  transform: scale(0.98);
+}
+.lower-header__right > button:focus {
+  outline: 2px solid var(--soft-color);
+  outline-offset: 2px;
 }
 
 .search-button,
@@ -234,7 +246,7 @@ input[type="search"]:focus{
     display: grid;
     grid-template-rows: 1fr 7fr 3fr;
 	gap: 70px;
-	
+	padding-right: 10px;
 }
 .sidebar a {
 	text-decoration: none;
@@ -280,6 +292,16 @@ input[type="search"]:focus{
 .menu-font {
 	font-size: clamp(0.6rem, -0.0199rem + 1.257vw, 1.3rem);
 	font-weight: 800;
+}
+.nav-container > a:hover,
+.menu-container > a:hover {
+	border-bottom: 3px solid var(--line-color);
+	color: var(--line-color);
+	transform: translateY(-2px);
+}
+.nav-container > a:active,
+.menu-container > a:active {
+	transform: scale(0.98);
 }
 
 /* MAIN CONTENT */
@@ -342,6 +364,17 @@ input[type="search"]:focus{
 .button-container {
 	justify-self: end;
 }
+.favorite-button:hover,
+.follow-button:hover,
+.fork-button:hover {
+	color: var(--project-color);
+	transform: translateY(-2px);
+}
+.favorite-button:active,
+.follow-button:active,
+.fork-button:active {
+	transform: scale(0.98);
+}
 .announcement-container {
 	padding: 25px 20px 20px 20px;
 	height: 370px;
@@ -381,6 +414,12 @@ input[type="search"]:focus{
 .trending-profile {
 	min-width: 50px;
 	width: 55px;
+}
+.trending-profile:hover {
+	transform: translateY(-2px);
+}
+.trending-profile:active {
+	transform: scale(0.90);
 }
 .profile-button {
 	grid-area: profpic;
