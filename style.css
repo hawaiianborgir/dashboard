@@ -215,6 +215,7 @@ input[type="search"]:focus{
 	width: 100px; 
 	height: clamp(20px, 12.368px + 1.6447vw, 40px);
 	font-weight: 700;
+	cursor: pointer;
 }
 
 .search-button,
@@ -224,6 +225,7 @@ input[type="search"]:focus{
 .fork-button {
 	border: none;
 	background-color: transparent;
+	cursor: pointer;
 }
 
 /* SIDEBAR */
