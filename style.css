@@ -150,10 +150,14 @@ input[type="search"]:focus{
 .search-button {
 	flex-shrink: 0;
 }
-.search-button:hover {
+.search-button:hover,
+.notification-button:hover,
+.upper-header__right > .profile-button:hover {
 	transform: translateY(-2px);
 }
-.search-button:active {
+.search-button:active,
+.notification-button:active,
+.upper-header__right > .profile-button:active {
 	transform: scale(0.98);
 }
 
