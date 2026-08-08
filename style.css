@@ -145,7 +145,6 @@ input[type="search"] {
 }
 input[type="search"]:focus{
 	outline: none;
-	/* make a js for outline highlight for .search-bar when this input:focus */
 }
 .search-button {
 	flex-shrink: 0;
