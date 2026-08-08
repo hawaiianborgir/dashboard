@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 	--bg-color: #F66864;
 	--line-color: #c73732;
 	--project-color: #6E8DC4;
-	--desc-font:#5F6368;
+	--text-color:#5F6368;
 
 }
 
@@ -292,6 +292,9 @@ input[type="search"]:focus{
 	font-weight: 600;
 	padding-bottom: 10px;
 }
+.trending.section-title {
+	padding-top: 30px;
+}
 .main-content{
   	overflow-y: auto; /* min-height:0 plus this = scrollable*/
 }
@@ -299,6 +302,13 @@ input[type="search"]:focus{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	gap: 30px;
+}
+.project-card,
+.announcement-container,
+.trending-container {
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .project-card{
 	border-left: 10px solid var(--project-color);
@@ -308,20 +318,45 @@ input[type="search"]:focus{
 	display: grid;
 	grid-template-rows: 1.5fr 4fr 1.5fr;
 	padding: 0 20px 0 15px;
-	box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .project-title{
 	font-size: 1.2rem;
 	font-weight: 600;
 	align-self: end;
 }
-.project-description {
-	color: var(--desc-font);
+.project-text {
+	color: var(--text-color);
+
+	/* hide the overflow text into elipses (...) */
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 5;
+	line-clamp: 5;
+	overflow: hidden;
 }
 .button-container {
 	justify-self: end;
 }
-.announcement-container,
-.trending-container {
-	background-color: white;
+.announcement-container {
+	padding: 25px 20px 20px 20px;
+	height: 370px;
+	display: grid;
+	align-items: center;
+}
+.announcement-title{
+	font-weight: 600;
+}
+.announcement-text{
+	/* hide the overflow text into elipses (...) */
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	line-clamp: 3;
+	overflow: hidden;
+
+	font-size: 0.8rem;
+	color: var(--text-color);
+}
+.announcement-container > .navbar{
+	border-bottom: 0.5px solid var(--text-color);
 }
