@@ -8,12 +8,12 @@ A responsive dashboard UI built with plain HTML and CSS, styled around *Bocchi t
 
 ```
 ┌─────────────┬──────────────────────────────┐
-│             │            Header             │
+│             │            Header            │
 │   Sidebar   ├──────────────────────────────┤
-│             │                                │
-│  Logo/Nav/  │          Main Content          │
-│   Menu      │   (Projects | Announcements    │
-│             │       & Trending)               │
+│             │                              │
+│  Logo/Nav/  │          Main Content        │
+│   Menu      │   (Projects | Announcements  │
+│             │       & Trending)            │
 └─────────────┴──────────────────────────────┘
 ```
 
